@@ -141,12 +141,12 @@ import torch.optim as optim
 
 loss_fn = nn.CrossEntropyLoss()
 
-optimizer = optim.SGD(model.parameters(), lr = 0.001, momentum = 0.9, weight_decay = 5e-4) 
+optimizer = optim.SGD(model.parameters(), lr = 0.001, momentum = 0.9, weight_decay = 1e-4) 
 
 
 # ### Step 4: Train the neural nets
 
-epochs=10
+epochs=20
 
 for i in range(epochs): # iterate over epochs
     tic = time()
